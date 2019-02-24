@@ -15,25 +15,25 @@
 
 
 # Idea
-World - Debate is an online debating platform that allows you to provoke your friends to a direct confrontation. 
+[World - Debate](http://world-debate.mirceasorin.ro/) is an online debating platform that allows you to provoke your friends to a direct confrontation. 
 
 The confrontation takes place between two people who then must post a file (image / video) and get as many votes as possible. 
 
 The winner will receive 10 *Debate Points* which represent the currency of this site, and to make things as interesting as possible also those who have voted the winner will receive a number of points, which is of course lower. 
 
 These debates are grouped into 3 categories:
-* Competitve debate
+* Competitive debate
 * Solo competitive debate - allows you not to not provoke anybody
 * Practice debate - for beginners, so that they can practice at will 
 
 
-Every member has a user profile that he can customize to his liking, a page where he can see everything posted by the people he is watching, a detailed statistics page about his/her performance, achievements and more.
+Every member has a user profile that he can customise to his liking, a page where he can see everything posted by the people he is watching, a detailed statistics page about his/her performance, achievements and more.
 
 ## What do to with points?
 You can unlock some special features , do transactions and much more.
 
 ## Do debates expire?
-At 00:00 GMT+2 the maintanance process runs, and all the debates who were supposed to expire that day will be targeted. During this process the winners are choosen and the points are given. Even if the debate is expired, you still can vote and have fun, but you're not getting any rewards.
+At 00:00 GMT+2 the maintenance process runs, and all the debates who were supposed to expire that day will be targeted. During this process the winners are chosen and the points are given. Even if the debate is expired, you still can vote and have fun, but you're not getting any rewards.
 
 > Project written in HighSchool (10th grade)
 
