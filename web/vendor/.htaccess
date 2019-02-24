@@ -1,0 +1,59 @@
+Options +FollowSymLinks  
+RewriteEngine On  
+
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+
+AuthName "Restricted Area" 
+AuthType Basic 
+AuthUserFile /home/worlddeb/public_html/.htpasswd 
+AuthGroupFile /dev/null 
+require valid-user
+
+RewriteCond %{SCRIPT_FILENAME} !-d  
+RewriteCond %{SCRIPT_FILENAME} !-f  
+RewriteRule feed/page/(.*) feed.php?p=$1	
+RewriteRule (.*)/page/(.*) profile.php?user=$1&p=$2	
+RewriteRule ^(\w+)$ ./profile.php?user=$1   
+RewriteRule profile/(.*) profile.php?type=$1	
+RewriteRule category/(.*)/(.*)/(.*) categories.php?cat=$1&p=$2&t=$3	
+RewriteRule category/(.*)/(.*) categories.php?cat=$1&t=$2	
+RewriteRule category/(.*) categories.php?cat=$1	
+RewriteRule make/(.*)/(.*) make.php?type=$1&with=$2		
+RewriteRule make/(.*) make.php?type=$1		
+RewriteRule view/(.*) view.php?type=public&name=$1	
+ErrorDocument 404 /404.php
+ErrorDocument 403 /404.php
+
+<Directory ^ZombieGame>
+	Allow from all
+</Directory>
+
+<Directory ^img>
+    <Files ^(*.php|*.phps)>
+        order deny,allow
+        deny from all
+    </Files>
+</Directory>
+
+<IfModule mod_security.c>
+  SecFilterEngine On
+  SecFilterScanPOST On
+  SecFilter "delete[[:space:]]+from"
+  SecFilter "insert[[:space:]]+into"
+  SecFilter "select.+from
+</IfModule>
+
+<IfModule mod_expires.c>
+  ExpiresActive on
+  ExpiresByType image/jpg "access 1 day"
+  ExpiresByType image/gif "access 1 day"
+  ExpiresByType image/jpg "access 1 day"
+  ExpiresByType image/jpeg "access 1 day"
+  ExpiresByType image/png "access 1 day"
+  ExpiresByType text/css "access 1 hour"
+  ExpiresByType application/x-javascript "access plus 1 day"
+  ExpiresByType text/javascript "access plus 1 day"
+  ExpiresByType application/javascript "access plus 1 day"
+</IfModule>`
+Options -Indexes
