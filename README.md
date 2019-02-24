@@ -1,7 +1,9 @@
 # World-Debate Web Platform
 
+## Youtube demo video
 [![](http://img.youtube.com/vi/iXP8W_1j4lA/0.jpg)](http://www.youtube.com/watch?v=iXP8W_1j4lA "World-Debate Demo")
 
+## Screens
 ![Demo Image ](https://github.com/msorins/World-Debate/blob/master/1.png?raw=true "Demo Image")
 
 ![Demo Image ](https://github.com/msorins/World-Debate/blob/master/2.png?raw=true "Demo Image")
